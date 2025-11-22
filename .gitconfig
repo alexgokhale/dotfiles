@@ -1,0 +1,25 @@
+[user]
+    name = Alex Gokhale
+    email = hello@alexgokhale.com
+[color]
+    ui = auto
+[push]
+    followTags = true
+[pull]
+    rebase = false
+[core]
+    editor = /usr/bin/vim
+    excludesfile = ~/.gitignore
+    whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+[apply]
+    whitespace = fix
+[commit]
+    gpgsign = true
+[gpg]
+    format = ssh
+[diff]
+    algorithm = patience
+[diff "bin"]
+    textconv = hexdump -v -C
+[init]
+    defaultBranch = main
