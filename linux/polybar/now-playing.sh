@@ -1,9 +1,9 @@
 #!/bin/bash
 
-player_status=$(playerctl --player=spotify,%any status 2> /dev/null)
-artist=$(playerctl --player=spotify,%any metadata artist 2>&1)
+player_status=$(playerctl status 2> /dev/null)
+artist=$(playerctl metadata artist 2>&1)
 artist_code=$?
-title=$(playerctl --player=spotify,%any metadata title 2>&1)
+title=$(playerctl metadata title 2>&1)
 title_code=$?
 
 player_string=""
