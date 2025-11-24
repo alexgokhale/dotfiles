@@ -1,0 +1,9 @@
+[Unit]
+Description=Notify when track changes
+
+[Service]
+Restart=on-failure
+ExecStart=/home/alex/.config/spotify/track_change.py
+
+[Install]
+WantedBy=default.target
